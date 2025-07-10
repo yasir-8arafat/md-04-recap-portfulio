@@ -20,13 +20,15 @@
     border-radius: 5px;
 }
 
+
+
 /* nav bar design start */
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 230px;
+    margin: 0 200px;
 }
 .nav-title{
     font-size: 45px;
@@ -42,4 +44,40 @@ nav ul{
     display: flex;
     gap: 45px;
     align-items: center;
+}
+
+/* Header section design start */
+.head{
+    margin-left: 50px;
+    background-image: url(../images/developer.png),url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+
+
+
+
+/* Banner section design start */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 38px 0 200px;
+}
+.banner-content{
+    max-width: 585px;
+}
+.banner-intro{
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+}
+.banner-title{
+    font-size: 85px;
+    font-weight: bold;
+    color: #181818;
+}
+.bnr-description{
+    font-size: 18px;
+    font-weight: 400;
+    color: #757575;
 }
