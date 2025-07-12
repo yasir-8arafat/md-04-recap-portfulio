@@ -1,16 +1,23 @@
 .open-sans-normal {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* universal dsign */
+* {
+    margin: opx;
+    padding: 0px;
 }
 
 /* Shared style */
-.cmn-color{
+.cmn-color {
     color: #FD6E0A;
 }
-.cmn-btn{
+
+.cmn-btn {
     font-size: 20px;
     font-weight: bold;
     color: #FFFFFF;
@@ -19,15 +26,18 @@
     border: none;
     border-radius: 5px;
 }
-.cmn-bg{
+
+.cmn-bg {
     background-color: #FFF8F3;
 }
-.section-title{
+
+.section-title {
     font-size: 35px;
     font-weight: bold;
     color: #181818;
 }
-.section-description{
+
+.section-description {
     font-size: 18px;
     font-weight: 400;
     color: #757575
@@ -36,8 +46,8 @@
 
 
 /* Header section design start */
-.head{
-    background-image: url(../images/developer.png),url(../images/header_bg.png);
+.head {
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
     background-repeat: no-repeat;
     background-position: top left, bottom right;
 }
@@ -46,23 +56,26 @@
 
 /* nav bar design start */
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0px 230px;
 }
-.nav-title{
+
+.nav-title {
     font-size: 45px;
     font-weight: 800;
 }
-nav ul a{
+
+nav ul a {
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
     color: #474747;
 }
-nav ul{
+
+nav ul {
     display: flex;
     gap: 45px;
     align-items: center;
@@ -70,35 +83,40 @@ nav ul{
 
 
 /* Banner section design start */
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
     margin: 0px 38px 0 230px;
 }
-.banner-content{
+
+.banner-content {
     max-width: 585px;
     margin-top: 80px;
 }
-.banner-intro{
+
+.banner-intro {
     font-size: 45px;
     font-weight: 600;
     color: #474747;
     margin-bottom: 5px;
 }
-.banner-title{
+
+.banner-title {
     font-size: 85px;
     font-weight: bold;
     color: #181818;
     margin-top: 5px;
     margin-bottom: 20px;
 }
-.bnr-description{
+
+.bnr-description {
     font-size: 18px;
     font-weight: 400;
     color: #757575;
     margin-bottom: 30px;
 }
-#banner-btn-2{
+
+#banner-btn-2 {
     background-color: #FFF8F3;
     color: #FD6E0A;
     border: 1px solid #FD6E0A;
@@ -107,7 +125,7 @@ nav ul{
 
 
 /* main tag style start */
-main{
+main {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -115,33 +133,113 @@ main{
 
 
 /* about section style start */
-.about{
+.about {
     padding: 130px 155px;
     margin-top: 130px;
     border-radius: 10px;
     text-align: center;
 }
-.section-items{
+
+.section-items {
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
 }
-.section-items div{
+
+.section-items div {
     text-align: center;
 }
-.item-title{
+
+.item-title {
     font-size: 20px;
     font-weight: 400px;
     color: #757575;
     margin-bottom: 8px;
 }
-.itm-data{
+
+.itm-data {
     font-size: 20px;
     font-weight: bold;
     color: #474747;
     margin-top: 8px;
 }
-.inner-about{
+
+.inner-about {
     background-color: #FFFFFF;
     border: 1px solid black;
+}
+
+
+
+/* What I do section design start */
+.skill{
+    margin-top: 130px;
+}
+.skill-info {
+    text-align: center;
+    padding: 0 120px;
+}
+
+.skill-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.skill-box {
+    /* border: 1px solid black; */
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.skill-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #181818;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.skill-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575
+}
+
+
+
+/* Resume section design start */
+.resume{
+    margin-top: 150px;
+}
+.resume-container{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 50px;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 70px;
+}
+.resume-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(71, 71, 71, 1);
+    margin-bottom: 30px;
+}
+.resume-sub-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(71, 71, 71, 1);
+}
+.constitution{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(117, 117, 117, 1);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.resume-container hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
