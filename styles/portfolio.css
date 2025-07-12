@@ -172,9 +172,10 @@ main {
 
 
 /* What I do section design start */
-.skill{
+.skill {
     margin-top: 130px;
 }
+
 .skill-info {
     text-align: center;
     padding: 0 120px;
@@ -210,10 +211,11 @@ main {
 
 
 /* Resume section design start */
-.resume{
+.resume {
     margin-top: 150px;
 }
-.resume-container{
+
+.resume-container {
     display: flex;
     gap: 24px;
     margin-bottom: 50px;
@@ -221,25 +223,63 @@ main {
     margin-top: 50px;
     padding: 0 70px;
 }
-.resume-title{
+
+.resume-title {
     font-size: 30px;
     font-weight: bold;
     color: rgba(71, 71, 71, 1);
     margin-bottom: 30px;
 }
-.resume-sub-title{
+
+.resume-sub-title {
     font-size: 25px;
     font-weight: bold;
     color: rgba(71, 71, 71, 1);
 }
-.constitution{
+
+.constitution {
     font-size: 20px;
     font-weight: 600;
     color: rgba(117, 117, 117, 1);
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.resume-container hr{
+
+.resume-container hr {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+
+/* footer section design start */
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 117px;
+    padding: 100px 0;
+    margin-top: 113px;
+}
+.Connect{
+    max-width: 562px;
+}
+
+footer div a {
+    margin-right: 24px;
+}
+.msg{
+    width: 461px;
+}
+
+footer input[type="text"],
+input[type="email"],
+textarea {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 18px 30px;
+    display: block;
+    margin-bottom: 24px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
 }
