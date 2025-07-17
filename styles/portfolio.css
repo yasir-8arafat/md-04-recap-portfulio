@@ -43,6 +43,10 @@
     color: #757575
 }
 
+.hide {
+    display: none;
+}
+
 
 
 /* Header section design start */
@@ -126,7 +130,7 @@ nav ul {
 
 /* main tag style start */
 main {
-    max-width: 1140px;
+    max-width: 80vw;
     margin: 0 auto;
 }
 
@@ -183,6 +187,7 @@ main {
 
 .skill-container {
     display: flex;
+    justify-content: center;
     gap: 24px;
     margin-top: 50px;
 }
@@ -252,22 +257,26 @@ main {
 
 
 /* footer section design start */
-footer{
+footer {
     display: flex;
     justify-content: center;
     gap: 117px;
     padding: 100px 0;
     margin-top: 113px;
 }
-.Connect{
-    max-width: 562px;
+
+.Connect {
+    /* max-width: 562px; */
+    width: 30vw;
 }
 
 footer div a {
     margin-right: 24px;
 }
-.msg{
-    width: 461px;
+
+.msg {
+    /* width: 461px; */
+    width: 24.5vw;
 }
 
 footer input[type="text"],
@@ -282,4 +291,91 @@ textarea {
     border-radius: 5px;
     border: none;
     background-color: white;
+}
+
+
+
+/* Responsibe Design Start */
+
+
+
+/* Responsive For small Device */
+@media screen and (max-width: 576px) {
+    main{
+        max-width: 95vw;
+    }
+
+    /* Skill Section Responsive Start */
+    .skill-container {
+        flex-direction: column;
+    }
+
+    .skill-info {
+        padding: 0 20px;
+    }
+
+    /* Skill Section Responsive end */
+
+    /* Resume section Responsive Start */
+    .resume-container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    /* Resume Section Responsive End */
+
+    /* Footer section Responsive Start */
+    footer {
+        flex-direction: column;
+    }
+
+    .Connect,
+    .msg {
+        width: 80vw;
+        padding-left: 15px;
+    }
+
+    footer input[type="text"],
+    input[type="email"],
+    textarea {
+        /* width: calc(100% - 90px); */
+        width: 70vw;
+    }
+
+    /* Footer Section Responsive End */
+
+    /* About Section Responsive */
+    .about {
+        padding: 50px 20px;
+    }
+    .section-items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .inner-about{
+        padding: 10px;
+    }
+    /* about section responsive Complete */
+
+    /* Header Section Responsive Start */
+    .head{
+        background-image: none;
+    }
+    .banner,nav,nav > ul{
+        flex-direction: column;
+    }
+    .banner{
+        margin: 0 10px;
+    }
+    nav{
+        margin: auto;
+    }
+    .banner img{
+        width: 100%;
+    }
+    #banner-btn-2{
+        margin-top: 20px;
+    }
+    /* Header Section Responsive Complete */
 }
